@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 18px;
+}
+
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    background: url(images/bg-header-desktop.png) no-repeat;
+    background-size: contain;
+}
+
+
+
+/* Header Content */
+
+header{
+    padding: 0.3rem;
+    margin-top: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.logo{
+    width: 7em;
+}
+
+.header-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header-heading{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--DarkGrayishBlue);
+    text-align: center;
+}
+
+.header-para{
+    color: var(--GrayishBlue);
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.download-buttons{
+    display: flex;
+    justify-content: center; 
+    gap: 1rem;  
+}
+
+.download{
+    padding: 0.8rem 2rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 2rem;
+}
+
+#ios-download{
+    background-color: var(--StrongCyan);
+}
+
+#ios-download:hover{
+    background-color: #5fccbb;
+    cursor: pointer;
+}
+
+#mac-download{
+    background-color: var(--LightBlue);
+}
+
+#mac-download:hover{
+    background-color: #8896ff;
+    cursor: pointer;
+}
+
+
+
+/* Track */
+
+.track{
+    padding: 0.3rem;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.track-heading{
+    color: var(--DarkGrayishBlue);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.track-para{
+    color: var(--GrayishBlue);
+    width: 57%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+
+
+/* First-PC */
+
+.first-pc{
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-top: 5rem;
+}
+
+.mac{
+    width: 40rem;
+    transform: translateX(-3rem);
+}
+
+.first-pc-features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.features-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.features-heading{
+    color: var(--DarkGrayishBlue);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.features-para{
+    color: var(--GrayishBlue);
+    width: 60%;
+}
+
+
+
+/* Section-Access */
+
+.section-access{
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 8rem;
+    align-items: center;
+}
+
+.access-heading{
+    font-size: 2rem;
+    color: var(--DarkGrayishBlue);
+    font-weight: 600;
+}
+
+.access-para{
+    color: var(--GrayishBlue);
+    width: 50%;
+    text-align: center;
+}
+
+
+
+/* Second-PC */
+
+.second-pc{
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.devices{
+    width: 50rem;
+}
+
+
+
+/* Workflow */
+
+.workflow{
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 2.5rem;
+    align-items: center;
+}
+
+.workflow-heading{
+    color: var(--DarkGrayishBlue);
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.workflow-para{
+    color: var(--GrayishBlue);
+}
+
+
+
+/* Card Container */
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    padding: 0.3rem;
+}
+
+.card{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+}
+
+.icon{
+    width: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-heading{
+    color: var(--DarkGrayishBlue);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.card-para{
+    color: var(--GrayishBlue);
+
+}
+
+
+
+/* Logo Container */
+
+.logo-container{
+    padding: 0.3rem;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/* Download Option */
+
+.download-option{
+   display: flex;
+   flex-direction: column; 
+   gap: 1rem;
+   margin-top: 7rem;
+   text-align: center;
+   align-items: center;
+}
+
+.download-heading{
+    font-size: 1.5rem;
+    color: var(--DarkGrayishBlue);
+    font-weight: 600;
+}
+
+.download-para{
+    color: var(--GrayishBlue);
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+
+
+/* Footer */
+
+footer{
+    background-color: #f5f6f8;
+    margin-top: 7rem;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+}
+
+.footer-logo-container{
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo{
+    width: 3.5rem;
+}
+
+.footer-content{
+    width: 48%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    color: var(--DarkGrayishBlue);
+}
+
+.social-link{
+    width: 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--DarkGrayishBlue);
+    gap: 1rem;
+}
+
+.size{
+    font-size: 1.5rem;
+}
+
+.link:hover , .size:hover{
+    color: var(--StrongCyan);
+    cursor: pointer;
+}
+
+
+
+@media (max-width:920px){
+
+    body{
+        background: url(images/bg-header-mobile.png) no-repeat;
+        background-size: contain;
+        text-align: center;
+    }
+
+    .download-buttons{
+        flex-direction: column;
+    }
+
+    .first-pc{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mac{
+        transform: none;
+        width: 20rem;
+    }
+
+    .first-pc-features{
+        text-align: center;
+    }
+
+    .features-para{
+        width: 100%;
+    }
+
+    .devices{
+        width: 20rem;
+    }
+
+    .card-container , .logo-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5rem;
+    }
+
+    .logo-container{
+        gap: 3rem;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer-content{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+
+    .social-link{
+        gap: 2rem;
+    }
+
+    .download-para , .access-para , .features-para , .track-para , .header-para{
+        width: 100%;
+    }
+
+    header , main{
+        padding: 0rem 1rem;
+    }
+
+}
+
+@media (max-width : 420px){
+    .devices , .mac{
+        width: 13rem;
+    }
+}
